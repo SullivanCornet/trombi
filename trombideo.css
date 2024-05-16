@@ -1,0 +1,1073 @@
+
+*{box-sizing:border-box;}
+body,html {
+  margin:0;
+  padding:0;
+  font-family: 'Segoe UI';
+  font-size: 1rem;
+  line-height:1.5;
+  color:#333;
+  overflow-x:hidden;
+
+background:linear-gradient(#ebdada,#161618)
+}
+
+.v-header {
+  height:100vh;
+display:flex;
+  /* align-items:center; */
+  color:#fff;
+}
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding:1rem;
+  margin:auto;
+  text-align: center;
+}
+.fullscreen-video-wrap{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.fullscreen-video-wrap video{
+position:relative;
+min-height: 100%;
+min-width: 100%;
+}
+.header-overlay{
+height:100vh;
+width: 100vw;
+position: absolute;
+top: 0;
+left:0;
+background: rgba(59, 95, 250, 0.63);
+z-index: 1;
+}
+.header-content {
+  z-index: 2;
+  margin-top: 17%;
+  margin-right: 10%;
+}
+
+.header-content h1 {
+text-shadow: 3px 1px 1px rgba(0,0,0,0.4) ;
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-right: 50px;
+
+}
+
+.header-content p {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+font-size: 1.5rem;
+display: block;
+padding-bottom: 2rem;
+
+}
+
+
+
+
+
+
+.btn{
+
+  background: #345fb3;
+  color:#fff;
+  font-size: 1.2rem;
+  padding: 1rem 1rem;
+  text-decoration: none;
+display: inline-block;
+border-radius: 5px;
+box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+cursor:pointer;
+transition: all ease-in-out 300ms;
+}
+.btn:hover {
+  box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+  transform: translate(0px,-10px);
+  color:rgb(251, 175, 151);
+}
+
+#team  {
+
+  font-size: 50px;
+  margin-bottom: 0;
+
+}
+
+
+p {
+  padding: 5%;
+  margin-top: 5%;
+  padding-top: 5%;
+
+}
+h3 {
+  margin-top: 2%;
+
+}
+footer{
+  height: 10vh;
+background: linear-gradient( #161618, #ebdada)
+}
+
+
+
+
+#grille{
+  cursor:pointer;
+position:relative;
+display: grid;
+  grid-template-columns: 1fr 1fr 1FR 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+height: 80vh;
+
+}
+
+
+
+
+
+
+.ludo {
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(200, 233, 188) ; */
+ transform: scale(1);
+transition:  0.7s ease-in-out;
+  background-image:url("./trombimages/ludodeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+
+  grid-row: 1;
+  grid-column:  1;
+}
+ /* .ludo:hover{
+    box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  transform: scale(1.02);
+
+   background-image:url("./trombimages/ludodefaceColor.webp") ;
+
+
+} */
+
+.fred{
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(217, 61, 61) ; */
+  background-image:url("./trombimages/freddeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+
+  grid-row: 1;
+  grid-column: 2;
+}
+/* .fred:hover {
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  background-image:url("./trombimages/freddefacecolor.webp") ;
+
+} */
+
+.emilie {
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(188, 229, 233) ; */
+  background-image:url("./trombimages/emiliedeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row: 1;
+  grid-column: 3;
+}
+/* .emilie:hover {
+  transform: scale(1.02);
+
+    box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  background-image:url("./trombimages/emiliedefacecolor.webp") ;
+
+} */
+.comes {
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(81, 93, 77) ; */
+  background-image:url("./trombimages/comesdeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row: 1;
+  grid-column: 4;
+
+}
+
+/* .comes:hover {
+  transform: scale(1.02);
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+  box-shadow: inset 0 0 1em black;
+
+  background-image:url("./trombimages/comesdeface.webp") ;
+
+} */
+.ylan {
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(200, 188, 233) ; */
+  background-image:url("./trombimages/ylandeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row: 1;
+  grid-column: 5;
+}
+/* .ylan:hover {
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  background-image:url("./trombimages/ylandeface.webp") ;
+
+} */
+.allan{
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(233, 227, 188) ; */
+  background-image:url("./trombimages/allandeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+
+  grid-row: 2;
+  grid-column: 1;
+}
+/* .allan:hover {
+
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  background-image:url("./trombimages/allandeface.webp") ;
+
+} */
+.noria{
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(249, 75, 200) ; */
+
+  background-image:url("./trombimages/noriadeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row: 2;
+  grid-column: 2;
+}
+/* .noria:hover{
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+
+
+  background-image:url("./trombimages/noriadeface.webp") ;
+
+} */
+.descriptif{
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+
+
+
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.descriptif:hover
+{  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+}
+.oussama {
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(56, 57, 55) ; */
+  background-image:url("./trombimages/oussamadeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row: 2;
+  grid-column: 4;
+}
+/* .oussama:hover {
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  background-image:url("./trombimages/oussamadeface.webp") ;
+
+} */
+.sullivan{
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(54, 94, 238) ; */
+  background-image:url("./trombimages/sullivandeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row:2;
+  grid-column: 5;
+}
+/* .sullivan:hover{
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  background-image:url("./trombimages/sullivandeface.webp") ;
+
+} */
+.damien{
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(234, 238, 33) ; */
+  background-image:url("./trombimages/damiendeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row:3;
+  grid-column: 1;
+}
+/* .damien:hover{
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+  box-shadow: inset 0 0 1em black;
+
+  background-image:url("./trombimages/damiencadeface.webp") ;
+
+} */
+.theo{
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(37, 241, 241) ; */
+  background-image:url("./trombimages/theodeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row:3;
+  grid-column: 2;
+}
+/* .theo:hover{
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  background-image:url("./trombimages/theodeface.webp") ;
+
+} */
+.abdennour{
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(242, 158, 13) ; */
+  background-image:url("./trombimages/abdennourdeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row:3;
+  grid-column: 3;
+}
+/* .abdennour:hover{
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  background-image:url("./trombimages/abdennourdeface.webp") ;
+
+} */
+.bulent{
+  transform: scale(1);
+transition:  0.7s ease-in-out;
+  box-shadow: inset 0 0 1em black;
+  /* background-color :rgb(10, 115, 55) ; */
+  background-image:url("./trombimages/bulentdeface.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  grid-row:3;
+  grid-column: 4;
+}
+/* .bulent:hover{
+  transform: scale(1.02);
+
+  box-shadow: inset 0 0 1em black,0 0 1em black;
+
+  background-image:url("./trombimages/bulentdeface.webp") ;
+
+} */
+
+
+
+
+/*----------------------------------------------------------------  */
+
+
+
+.ludohaut{
+  background-image:url("./trombimages/ludohaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.ludobas{
+  background-image:url("./trombimages/ludobas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.ludodroite{
+  background-image:url("./trombimages/ludodroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* .ludogauche {
+  background-image:url("ludogauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* .ludodiagonalehd {
+  background-image:url("ludodiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* .ludodiagonalehg {
+  background-image:url("ludodiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.ludodiagonalebg {
+  background-image:url("./trombimages/ludodiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.ludodiagonalebd {
+  background-image:url("./trombimages/ludodiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* .ludoColor{
+  background-image:url("ludodefacecolor.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+
+/*----------------------------------------------------------------  */
+
+/* .fredhaut{
+  background-image:url("fredhaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.fredbas{
+  background-image:url("./trombimages/fredbas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.freddroite{
+  background-image:url("./trombimages/freddroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fredgauche {
+  background-image:url("./trombimages/fredgauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .freddiagonalehd {
+  background-image:url("freddiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.freddiagonalehg {
+  background-image:url("freddiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.freddiagonalebg {
+  background-image:url("./trombimages/freddiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.freddiagonalebd {
+  background-image:url("./trombimages/freddiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/*
+.fredcolor{
+  background-image:url("freddefacecolor.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+
+/*----------------------------------------------------------------  */
+
+
+
+
+/* .emiliehaut{
+  background-image:url("emiliehaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.emiliebas{
+  background-image:url("./trombimages/emiliebas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.emiliedroite{
+  background-image:url("./trombimages/emiliedroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.emiliegauche {
+  background-image:url("./trombimages/emiliegauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .emiliediagonalehd {
+  background-image:url("emiliediagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.emiliediagonalehg {
+  background-image:url("emiliediagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.emiliediagonalebg {
+  background-image:url("./trombimages/emiliediagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.emiliediagonalebd {
+  background-image:url("./trombimages/emiliediagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* .emiliecolor{
+  background-image:url("emiliedefacecolor.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/*----------------------------------------------------------------  */
+/*.comeshaut{
+   background-image:url("comeshaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+
+
+.comesbas{
+  background-image:url("./trombimages/comesbas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.comesdroite{
+  background-image:url("./trombimages/comesdroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.comesgauche {
+  background-image:url("./trombimages/comesgauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .comesdiagonalehd {
+  background-image:url("comesdiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.comesdiagonalehg {
+  background-image:url("comesdiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.comesdiagonalebg {
+  background-image:url("./trombimages/comesdiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.comesdiagonalebd {
+  background-image:url("./trombimages/comesdiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* .comescolor{
+  background-image:url("comesdeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+
+/*----------------------------------------------------------------  */
+.ylanhaut{
+  background-image:url("./trombimages/ylanhaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.ylanbas{
+  background-image:url("./trombimages/ylanbas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.ylandroite{
+  background-image:url("./trombimages/ylandroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.ylangauche {
+  background-image:url("./trombimages/ylangauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .ylandiagonalehd {
+  background-image:url("ylandiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.ylandiagonalehg {
+  background-image:url("ylandiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.ylandiagonalebg {
+  background-image:url("./trombimages/ylandiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.ylandiagonalebd {
+  background-image:url("./trombimages/ylandiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* .ylancolor{
+  background-image:url("ylandeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+
+.allanhaut{
+  background-image:url("./trombimages/allanhaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.allanbas{
+  background-image:url("./trombimages/allanbas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.allandroite{
+  background-image:url("./trombimages/allandroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* .allangauche {
+  background-image:url("allangauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.allandiagonalehd {
+  background-image:url("./trombimages/allandiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .allandiagonalehg {
+  background-image:url("allandiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* .allandiagonalebg {
+  background-image:url("allandiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.allandiagonalebd {
+  background-image:url("./trombimages/allandiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .allandeface{
+  background-image:url("allandeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* .allancolor{
+  background-image:url("allandeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* ------------------------------------------------------------- */
+.noriahaut{
+  background-image:url("./trombimages/noriahaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.noriabas{
+  background-image:url("./trombimages/noriabas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.noriadroite{
+  background-image:url("./trombimages/noriadroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.noriagauche {
+  background-image:url("./trombimages/noriagauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.noriadiagonalehd {
+  background-image:url("./trombimages/noriadiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.noriadiagonalehg {
+  background-image:url("./trombimages/noriadiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.noriadiagonalebg {
+  background-image:url("./trombimages/noriadiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.noriadiagonalebd {
+  background-image:url("./trombimages/noriadiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* .noriacolor{
+  background-image:url("noriadeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/*----------------------------------------------------------------  */
+
+.oussamahaut{
+  background-image:url("./trombimages/oussamahaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.oussamabas{
+  background-image:url("./trombimages/oussamabas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.oussamadroite{
+  background-image:url("./trombimages/oussamadroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.oussamagauche {
+  background-image:url("./trombimages/oussamagauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.oussamadiagonalehd {
+  background-image:url("./trombimages/oussamadiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.oussamadiagonalehg {
+  background-image:url("./trombimages/oussamadiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.oussamadiagonalebg {
+  background-image:url("./trombimages/oussamadiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.oussamadiagonalebd {
+  background-image:url("./trombimages/oussamadiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/*
+.oussamacolor{
+  background-image:url("oussamadeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* ------------------------------------------------------------ */
+
+.sullivanhaut{
+  background-image:url("./trombimages/sullivanhaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.Sullivanbas{
+  background-image:url("./trombimages/sullivanbas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .sullivandroite{
+  background-image:url("sullivandroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+
+.sullivangauche {
+  background-image:url("./trombimages/sullivangauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .sullivandiagonalehd {
+  background-image:url("sullivandiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.sullivandiagonalehg {
+  background-image:url("./trombimages/sullivandiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.sullivandiagonalebg {
+  background-image:url("./trombimages/sullivandiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .sullivandiagonalebd {
+  background-image:url("sullivandiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+
+/* .sullivancolor{
+  background-image:url("sullivandeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+
+/*-------------------------------------------------  */
+
+.damienhaut{
+  background-image:url("./trombimages/damienhaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .damieas{
+  background-image:url("damieas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.damiendroite{
+  background-image:url("./trombimages/damiendroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* .damiengauche {
+  background-image:url("damiengauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.damiendiagonalehd {
+  background-image:url("./trombimages/damiendiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .damiendiagonalehg {
+  background-image:url("damiendiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* .damiendiagonalebg {
+  background-image:url("damiendiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* .damiendiagonalebd {
+  background-image:url("damiendiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.damiencolor{
+  background-image:url("damiendeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/*-------------------------------------------------  */
+
+.theohaut{
+  background-image:url("./trombimages/theohaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .theobas{
+  background-image:url("theobas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.theodroite{
+  background-image:url("./trombimages/theodroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.theogauche {
+  background-image:url("./trombimages/theogauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.theodiagonalehd {
+  background-image:url("./trombimages/theodiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.theodiagonalehg {
+  background-image:url("./trombimages/theodiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .theodiagonalebg {
+  background-image:url("theodiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.theodiagonalebd {
+  background-image:url("theodiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* .theocolor{
+  background-image:url("theodeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+
+/*-------------------------------------------------  */
+
+.abdennourhaut{
+  background-image:url("./trombimages/abdennourhaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .abdennourbas{
+  background-image:url("abdennourbas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.abdennourdroite{
+  background-image:url("./trombimages/abdennourdroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.abdennourgauche {
+  background-image:url("./trombimages/abdennourgauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.abdennourdiagonalehd {
+  background-image:url("./trombimages/abdennourdiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.abdennourdiagonalehg {
+  background-image:url("./trombimages/abdennourdiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .abdennourdiagonalebg {
+  background-image:url("abdennourdiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.abdennourdiagonalebd {
+  background-image:url("abdennourdiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.abdennourcolor{
+  background-image:url("abdennourdeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/*-------------------------------------------------  */
+
+.bulenthaut{
+  background-image:url("./trombimages/bulenthaut.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .bulentbas{
+  background-image:url("bulentbas.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+.bulentdroite{
+  background-image:url("./trombimages/bulentdroite.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bulentgauche {
+  background-image:url("./trombimages/bulentgauche.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.bulentdiagonalehd {
+  background-image:url("./trombimages/bulentdiagonalehd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.bulentdiagonalehg {
+  background-image:url("./trombimages/bulentdiagonalehg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+/* .bulentdiagonalebg {
+  background-image:url("bulentdiagonalebg.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.bulentdiagonalebd {
+  background-image:url("bulentdiagonalebd.webp") ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.bulentcolor{
+  background-image:url("bulentdeface.webp") ;
+    background-size:100% 100%;
+  background-repeat: no-repeat;
+} */
+/* ------------------------------------------------------------- */
+
+
+
